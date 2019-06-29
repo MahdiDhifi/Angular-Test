@@ -1,6 +1,7 @@
-<div class="container">
-  <h2 class="title1">Cat List</h2>
-    <h3>Male</h3>
+<div class="main">
+  
+  <h2 class="title1">CAT LIST</h2>
+    <div class="title2"><h3>Male</h3></div>
 
   <ul *ngFor="let owner of OwnersModule">
     <ul *ngIf="owner.gender ==='Male'">
@@ -14,7 +15,7 @@
     </ul>
   </ul>
 
-  <h3>Female</h3>
+  <div class="title2"><h3>Female</h3></div>
 
   <ul *ngFor="let owner of OwnersModule">
     <ul *ngIf="owner.gender ==='Female'">
