@@ -1,0 +1,31 @@
+<div class="container">
+  <h2 class="title1">Cat List</h2>
+    <h3>Male</h3>
+
+  <ul *ngFor="let owner of OwnersModule">
+    <ul *ngIf="owner.gender ==='Male'">
+      <p *ngFor="let pets of owner.pets | orderBy:name">
+        <li *ngIf="pets.type =='Cat'">
+          <div class="card bg-primary text-white">
+            <div class="card-body"><img class="cat-imgs" src="../../../assets/img/cat.png">{{pets.name}}</div>
+          </div>
+        </li>
+      </p>
+    </ul>
+  </ul>
+
+  <h3>Female</h3>
+
+  <ul *ngFor="let owner of OwnersModule">
+    <ul *ngIf="owner.gender ==='Female'">
+      <p *ngFor="let pets of owner.pets | orderBy:name">
+        <li *ngIf="pets.type =='Cat'">
+          <div class="card bg-danger text-white">
+            <div class="card-body"><img class="cat-imgs" src="../../../assets/img/cat.png">{{pets.name}}</div>
+          </div>
+        </li>
+      </p>
+    </ul>
+  </ul>
+
+</div>
