@@ -21,7 +21,7 @@ import { OrderModule } from 'ngx-order-pipe';
     OrderModule
   ],
   providers: [ListOwnersPetsService],
-  bootstrap: [AppComponent]
+  bootstrap: [CatsComponent]
 })
 export class AppModule { }
 
