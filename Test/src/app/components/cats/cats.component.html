@@ -8,7 +8,7 @@
       <p *ngFor="let pets of owner.pets | orderBy:name">
         <li *ngIf="pets.type =='Cat'">
           <div class="card bg-primary text-white">
-            <div class="card-body"><img class="cat-imgs" src="../../../assets/img/cat.png">{{pets.name}}</div>
+            <div class="card-body"><img class="cat-imgs" src="assets/img/cat.png">{{pets.name}}</div>
           </div>
         </li>
       </p>
@@ -22,7 +22,7 @@
       <p *ngFor="let pets of owner.pets | orderBy:name">
         <li *ngIf="pets.type =='Cat'">
           <div class="card bg-danger text-white">
-            <div class="card-body"><img class="cat-imgs" src="../../../assets/img/cat.png">{{pets.name}}</div>
+            <div class="card-body"><img class="cat-imgs" src="assets/img/cat.png">{{pets.name}}</div>
           </div>
         </li>
       </p>
